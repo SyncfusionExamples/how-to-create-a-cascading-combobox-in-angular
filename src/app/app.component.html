@@ -1,0 +1,15 @@
+<div class="wrapper">
+  <ejs-combobox #country
+    [dataSource]="countryData" 
+    [fields]="countryFields" 
+    [placeholder]="countryWatermark"
+    (change)="countryChange()">
+  </ejs-combobox>
+  <div style="padding-top: 35px;">
+    <ejs-combobox #state
+     [dataSource]="stateData"
+     [fields]="stateFields"
+     [placeholder]="stateWatermark"
+     [enabled]="false"></ejs-combobox>
+  </div>
+</div>
